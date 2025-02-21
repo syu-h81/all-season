@@ -1,0 +1,2 @@
+/*! For license information please see main.js.LICENSE.txt */
+(()=>{"use strict";var __webpack_modules__={"./src/assets/js/main.js":()=>{eval("\n\n//# sourceURL=webpack:///./src/assets/js/main.js?")}},__webpack_exports__={};__webpack_modules__["./src/assets/js/main.js"]()})();
