@@ -1,1 +1,11 @@
 @use "../../global" as g;
+
+.c-heading {
+  font-size: 2.625rem;
+  font-weight: bold;
+  &-text {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+  }
+}

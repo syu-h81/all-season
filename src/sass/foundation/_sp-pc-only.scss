@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+.sp-only {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+  @include g.mq(md) {
+    display: none!important;
+  }
+}
+

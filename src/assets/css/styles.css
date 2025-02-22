@@ -393,6 +393,131 @@ img {
   vertical-align: bottom;
 }
 
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-logo h1 {
+  max-width: 480px;
+}
+.header-logo span {
+  font-weight: bold;
+}
+.header-contact-btn {
+  gap: 10px;
+  padding: 18px;
+}
+.header-contact-btn-supplyment {
+  font-size: 0.875rem;
+  padding: 4px 9px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.footer-container {
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .l-inner {
   margin: 0 auto;
+}
+
+.c-heading {
+  font-size: 2.625rem;
+  font-weight: bold;
+}
+.c-heading-text {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.c-contact-btn {
+  background-image: linear-gradient(#EDB54A, #D9632D);
+  border-radius: 3px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-contact-btn-supplyment {
+  background-color: #fff;
+  border-radius: 22px;
+}
+.c-contact-btn-text {
+  color: #fff;
+}
+
+.c-contact-banner {
+  width: 100%;
+  background-image: url("../images/contact_banner_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-contact-banner__container {
+  padding: 40px 180px;
+}
+.c-contact-banner__body {
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+.c-contact-banner__body__heading {
+  text-align: center;
+}
+.c-contact-banner__body__heading span {
+  color: #DDDDDD;
+}
+.c-contact-banner__body__text {
+  padding-top: 35px;
+  text-align: center;
+  line-height: 30px;
+}
+.c-contact-banner__body-contact-btn {
+  max-width: 660px;
+  height: 100px;
+  padding: 0 70px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.c-contact-banner__body-contact-btn-supplyment {
+  font-size: 1.625rem;
+  padding: 8px 18px;
+}
+.c-contact-banner__body-contact-btn-text {
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -14,7 +14,7 @@ module.exports = {
   entry: {
     // コンパイル対象のファイルを指定
     'main': path.resolve(__dirname, './src/assets/js/main.js'),
-    'style.css': path.join(__dirname, './src/assets/css/styles.css'),
+    'styles.css': path.join(__dirname, './src/assets/css/styles.css'),
   },
   // 出力設定
   output: {

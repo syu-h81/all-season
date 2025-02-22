@@ -1,0 +1,17 @@
+@use "../../global" as g;
+
+.c-contact-btn {
+  background-image: linear-gradient(g.$btn-color, g.$btn-color-2);
+  border-radius: 3px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-supplyment {
+    background-color: #fff;
+    border-radius: 22px;
+  }
+  &-text {
+    color: #fff;
+  }
+}
