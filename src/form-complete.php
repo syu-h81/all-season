@@ -48,6 +48,18 @@
         </div>
       </div>
     </div>
+    <!--======== footer ========-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-privacyPolicy">
+          <a href="">プライバシーポリシー</a>
+        </div>
+        <div class="footer-copyright">
+          <small>Copyright © 株式会社オールシーズン All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
   </div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
