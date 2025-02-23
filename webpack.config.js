@@ -76,6 +76,11 @@ module.exports = {
         { from: 'src/index.php', to: 'index.php' },
       ]
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/form-complete.php', to: 'form-complete.php' },
+      ]
+    }),
   ],
   // node_modules を監視（watch）対象から除外
   watchOptions: {

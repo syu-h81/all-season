@@ -1,9 +1,12 @@
+@use "../global" as g;
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
 }
 
 body {
+  color: g.$primary-text;
   font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     Meiryo, sans-serif;
 }

@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <!-- Import CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -188,16 +189,16 @@
         </div>
       </section>
       <!--======== quality-section ========-->
-      <section id="quality" class="p-quiality l-section">
-        <div class="p-quiality__container l-container">
-          <div class="p-quiality__block">
-            <div class="p-quiality__heading">
+      <section id="quality" class="p-quality l-section">
+        <div class="p-quality__container l-container">
+          <div class="p-quality__block">
+            <div class="p-quality__heading">
               <h2 class="c-heading">欧州各国で評価され、愛された、高い品質とデザイン</h2>
               <span class="c-heading-text">High quality and design that is appreciated and loved in European countries</span>
             </div>
-            <div class="p-quiality__cards">
-              <div class="p-quiality__card">
-                <div class="p-quiality__card__img">
+            <div class="p-quality__cards">
+              <div class="p-quality__card">
+                <div class="p-quality__card__img">
                   <img src="assets/images/quality_card_img_01.png" alt="">
                 </div>
                 <div class="p-quality__card__text">
@@ -205,8 +206,8 @@
                   <span>ジャーマンブラック</span>
                 </div>
               </div>
-              <div class="p-quiality__card">
-                <div class="p-quiality__card__img">
+              <div class="p-quality__card">
+                <div class="p-quality__card__img">
                   <img src="assets/images/quality_card_img_02.png" alt="">
                 </div>
                 <div class="p-quality__card__text">
@@ -214,8 +215,8 @@
                   <span>アンティークブラウン</span>
                 </div>
               </div>
-              <div class="p-quiality__card">
-                <div class="p-quiality__card__img">
+              <div class="p-quality__card">
+                <div class="p-quality__card__img">
                   <img src="assets/images/quality_card_img_03.png" alt="">
                 </div>
                 <div class="p-quality__card__text">
@@ -226,15 +227,8 @@
             </div>
             <div class="p-quality__achivements">
               <div class="p-quality__achivements__body">
-                <h3 class="p-quality__achivements__subHeading c-subHeading">世界120カ国以上50年以上の実績</h3>
-                <p class="p-quality__achivements__body__text">
-                  ヨーロッパ製自然石＋ガルバリウム鋼板高級感あふれるフラン
-                  ス石などの自然石が醸し出す深みのある美しさ石仕上げによる
-                  高級感と保護効果、自然石が紫外線や経年劣化から鋼板を守り
-                  塗り替え要らず。石付屋根材は欧州、北米、中東、オセアニア
-                  など世界120カ国以上の国で採用され、60年以上の実績があり
-                  ます。
-                </p>
+                <h3 class="p-quality__achivements__body__subHeading c-subHeading">世界120カ国以上50年以上の実績</h3>
+                <p class="p-quality__achivements__body__text">ヨーロッパ製自然石＋ガルバリウム鋼板高級感あふれるフランス石などの自然石が醸し出す深みのある美しさ石仕上げによる高級感と保護効果、自然石が紫外線や経年劣化から鋼板を守り塗り替え要らず。石付屋根材は欧州、北米、中東、オセアニアなど世界120カ国以上の国で採用され、60年以上の実績があります。</p>
               </div>
               <div class="p-quality__achivements__image">
                 <img src="assets/images/quality_achievements_img.png" alt="">
@@ -378,8 +372,11 @@
                   <p>お問い合わせ・導入希望フォーム送信<br>まずは資料請求・ご相談ください</p>
                 </div>
               </div>
-              <div class="p-introduce__flow__card">
-                <div class="p-introduce__flow__card__icon">
+              <div class="p-introduce__flow__card__arrow">
+                <img src="assets/images/arrow_icon.png" alt="">
+              </div>
+              <div class="p-introduce__flow__card p-introduce__flow__card__02">
+                <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__2">
                   <img src="assets/images/introduce_icon_02.png" alt="">
                 </div>
                 <div class="p-introduce__flow__card__heading">
@@ -389,8 +386,8 @@
                   <p>オンライン講習や実際の現場見学<br>などで、短期間でスキル習得可能</p>
                 </div>
               </div>
-              <div class="p-introduce__flow__card">
-                <div class="p-introduce__flow__card__icon">
+              <div class="p-introduce__flow__card p-introduce__flow__card__03">
+                <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__3">
                   <img src="assets/images/introduce_icon_03.png" alt="">
                 </div>
                 <div class="p-introduce__flow__card__heading">
@@ -400,15 +397,18 @@
                   <p>代理店様向けに販促ツール、営業資料を無償提供!<br>技術相談や見積サポートはいつでもOK</p>
                 </div>
               </div>
-              <div class="p-introduce__flow__card">
-                <div class="p-introduce__flow__card__icon">
+              <div class="p-introduce__flow__card__arrow">
+                <img src="assets/images/arrow_icon.png" alt="">
+              </div>
+              <div class="p-introduce__flow__card p-introduce__flow__card__04">
+                <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__4">
                   <img src="assets/images/introduce_icon_04.png" alt="">
                 </div>
                 <div class="p-introduce__flow__card__heading">
                   <h3>フォローアップ＆継続支援</h3>
                 </div>
                 <div class="p-introduce__flow__card__text">
-                  <p>新作・新仕様情報を迅速にフィードバック!ビジネス<br>展開のアドバイスや共同プロモーションも実施</p>
+                  <p>新作・新仕様情報を迅速にフィードバック!ビジネス展開のアドバイスや共同プロモーションも実施</p>
                 </div>
               </div>
             </div>
@@ -420,8 +420,8 @@
         <div class="p-chance-banner__container">
           <div class="p-chance-banner__block">
             <div class="p-chance-banner__heading">
-              <span>今がチャンス!</span>
-              <span>オールシーズン屋根材 代理店キャンペーン</span>
+              <p><span>今</span><span class="ga">が</span>チャンス!</p>
+              <p>オールシーズン屋根材 代理店キャンペーン</p>
             </div>
             <div class="p-chance-banner__limited">
               <div class="p-chance-banner__limited__supplyment">期間限定</div>
@@ -472,7 +472,7 @@
                   </div>
                   <div class="p-comment__content__profile__body__name">
                     <span class="p-comment__content__profile__body__name__position">代表取締役</span>
-                    <div class="p-comment__content__profile__body__name">
+                    <div class="p-comment__content__profile__body__name__name">
                       <span>塚本 修久</span>さま
                     </div>
                   </div>
@@ -507,28 +507,25 @@
               <!-- === お問い合わせ項目 === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>お問い合わせ項目</label>
                 </div>
                 <div class="p-contact-form__form__item__input p-contact-form__form__item__input__flex">
                   <div class="p-contact-form__form__item__input__radio">
-                    <input type="radio" name="kinds">
-                    <span>資料請求</span>
+                    <label><input type="radio" name="kinds">資料請求 </label>                  
                   </div>
                   <div class="p-contact-form__form__item__input__radio">
-                    <input type="radio" name="kinds">
-                    <span>無料相談</span>
+                    <label><input type="radio" name="kinds">無料相談</label>
                   </div>
                   <div class="p-contact-form__form__item__input__radio">
-                    <input type="radio" name="kinds">
-                    <span>その他</span>
+                    <label><input type="radio" name="kinds">その他</label>
                   </div>
                 </div>
               </div>
               <!-- === 氏名 === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>氏名</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
@@ -538,7 +535,7 @@
               <!-- === 会社・組織名 === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>会社・組織名</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
@@ -548,7 +545,7 @@
               <!-- === メールアドレス === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>メールアドレス</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
@@ -558,7 +555,7 @@
               <!-- === 電話番号 === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>電話番号</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
@@ -566,19 +563,40 @@
                 </div>
               </div>
               <!-- === 住所 === -->
-              <div class="p-contact-form__form__item">
+              <div class="p-contact-form__form__item p-contact-form__form__item__address">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>住所</label>
                 </div>
                 <div class="p-contact-form__form__item__address__input p-contact-form__form__item__input">
-                  <div class="p-contact-form__form__item__address__input__postCode p-contact-form__form__item__address__input__inner">
-                    <span>郵便番号</span>
-                    <input type="text" name="postCode">
-                  </div>
-                  <div class="p-contact-form__form__item__address__input__prefecture p-contact-form__form__item__address__input__inner">
-                    <span>都道府県</span>
-                    <input type="text" name="prefecture">
+                  <div class="p-contact-form__form__item__address__input__flex">
+                    <div class="p-contact-form__form__item__address__input__postCode p-contact-form__form__item__address__input__inner">
+                      <span>郵便番号</span>
+                      <input type="text" name="postCode">
+                    </div>
+                    <div class="p-contact-form__form__item__address__input__prefecture p-contact-form__form__item__address__input__inner">
+                      <span>都道府県</span>
+                      <?php
+                      // 都道府県リストを配列で定義
+                      $prefectures = [
+                          "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
+                          "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+                          "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県",
+                          "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県",
+                          "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+                          "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
+                          "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
+                      ];
+                      ?>
+                      <select name="prefecture">
+                        <option value="" disabled selected>選択してください</option>
+                        <?php foreach ($prefectures as $prefecture): ?>
+                          <option value="<?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>">
+                            <?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>
+                          </option>
+                        <?php endforeach; ?>
+                      </select>
+                    </div>
                   </div>
                   <div class="p-contact-form__form__item__address__input__city p-contact-form__form__item__address__input__inner">
                     <span>市区町村</span>
@@ -591,9 +609,9 @@
                 </div>
               </div>
               <!-- === お問い合わせ内容 === -->
-              <div id="contact" class="p-contact-form__form__item">
+              <div id="contact" class="p-contact-form__form__item p-contact-form__form__item__contact">
                 <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+                  <span class="p-contact-form__form__item__required">必須</span>
                   <label>お問い合わせ内容</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
@@ -601,15 +619,14 @@
                 </div>
               </div>
               <!-- === 個人情報の取扱いについて === -->
-              <div class="p-contact-form__form__item">
-                <div class="p-contact-form__form__item__label">
-                  <span class="c-required">必須</span>
+              <div class="p-contact-form__form__item p-contact-form__form__item__privacy">
+                <div class="p-contact-form__form__item__label p-contact-form__form__item__label__privacy">
+                  <span class="p-contact-form__form__item__required p-contact-form__form__item__required__privacy">必須</span>
                   <label>個人情報の<br>取扱いについて</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <div class="p-contact-form__form__item__input__flex">
-                    <input type="checkbox" name="privacy">
-                    <span>同意する</span>
+                  <div class="p-contact-form__form__item__input__flex p-contact-form__form__item__input__privacy">
+                    <label><input type="checkbox" name="privacy">同意する</label>
                   </div>
                   <div class="p-contact-form__form__item__input__privacy__text">
                     <p>個人情報のお取り扱い方針については<a href="">こちら</a>をご確認ください。</p>

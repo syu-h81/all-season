@@ -7,6 +7,9 @@
   background-repeat: no-repeat;
   &__container {
     padding: 40px 180px;
+    &:last-of-type {
+      margin-top: 60px;
+    }
   }
   &__body {
     max-width: 1000px;
