@@ -349,14 +349,21 @@
           }
         }
         img {
+          @include g.mq(md) {
+            width: 100%;
+          }
           &:last-child {
-            margin-top: 15px;
+            @include g.mq(md) {
+              margin-top: 15px;
+            }
           }
         }
         &__sp {
-          img {
-            @include g.mq(md) {
-              width: 100%;
+          @include g.mq(md) {
+            img {
+              &:last-child {
+                margin-top: 15px;
+              }
             }
           }
         }
@@ -536,13 +543,14 @@
       }
     }
     &__flow__card {
-      width: 430px;
+      width: 40%;
       position: relative;
       background-color: #fff;
       border-radius: 3px;
       padding: 35px 10px;
       padding-top: 0;
       @include g.mq(md) {
+        width: 100%;
         padding: 25px 10px;
         padding-top: 0;
         margin-top: 15px;

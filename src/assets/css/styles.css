@@ -1118,12 +1118,19 @@ img {
     display: block;
   }
 }
-.p-quality__roof__image img:last-child {
-  margin-top: 15px;
+@media screen and (max-width: 768px) {
+  .p-quality__roof__image img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
-  .p-quality__roof__image__sp img {
-    width: 100%;
+  .p-quality__roof__image img:last-child {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-quality__roof__image__sp img:last-child {
+    margin-top: 15px;
   }
 }
 .p-construction__container {
@@ -1323,7 +1330,7 @@ img {
   }
 }
 .p-introduce__flow__card {
-  width: 430px;
+  width: 40%;
   position: relative;
   background-color: #fff;
   border-radius: 3px;
@@ -1332,6 +1339,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .p-introduce__flow__card {
+    width: 100%;
     padding: 25px 10px;
     padding-top: 0;
     margin-top: 15px;

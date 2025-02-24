@@ -277,8 +277,8 @@
                     <img src="assets/images/roof_specitification_img_01.png" alt="">
                   </div>
                   <div class="p-quality__roof__image p-quality__roof__image__sp sp-only">
-                    <img src="assets/images/sp_roof_specitification_img_01.png" alt="">
-                    <img src="assets/images/sp_roof_specitification_img_02.png" alt="">
+                    <img class="sp-only" src="assets/images/sp_roof_specitification_img_01.png" alt="">
+                    <img class="sp-only" src="assets/images/sp_roof_specitification_img_02.png" alt="">
                   </div>
                 </div>
                 <div class="p-quality__roof">
