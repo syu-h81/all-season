@@ -73,7 +73,7 @@
     }
     &__block {
       max-width: 1000px;
-      padding: 60px 0;
+      padding: 60px 20px;
       margin: 0 auto;
       @include g.mq(md) {
         padding: 30px 15px;
@@ -485,19 +485,17 @@
             width: 70%;
           }
           &__voice {
-            display: none;
-            @include g.mq(md) {
-              background-color: g.$primary-heading;
-              border-radius: 17px;
-              display: block;
-              color: #fff;
-              font-size: 1.125rem;
-              padding: 7px 14px;
-              margin-bottom: 14px;
+            background-color: g.$primary-heading;
+            border-radius: 17px;
+            color: #fff;
+            font-size: 1.125rem;
+            padding: 7px 14px;
+            margin-bottom: 14px;
             width: fit-content;
+            @include g.mq(md) {
               font-size: 0.8125rem;
               padding: 6px;
-              margin: 0;
+              margin: 0 auto;
               margin-top: 8px;
             }
           }

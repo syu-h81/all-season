@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;700&display=swap' rel="stylesheet">
 
   <!-- Import CSS -->
   <link
@@ -330,7 +331,7 @@
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_01.png" alt="">
-                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice sp-only">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
                     <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>
@@ -354,7 +355,7 @@
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_02.png" alt="">
-                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice sp-only">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
                     <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>
@@ -379,7 +380,7 @@
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_03.png" alt="">
-                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice sp-only">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
                     <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>

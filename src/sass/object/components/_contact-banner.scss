@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   &__container {
-    padding: 40px 180px;
+    padding: 40px 40px;
     @include g.mq(md) {
       padding: 30px 15px;
     }
