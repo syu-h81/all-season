@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.swiper {
+  padding-top: 50px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  height: 320px !important;
+  width: auto !important;
+}

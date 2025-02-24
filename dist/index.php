@@ -21,6 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <!-- Import CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Import JS/jQuery Library -->
@@ -80,7 +84,36 @@
               </div>
             </div>
             <!-- === swiperの実装なので最後に実装 === -->
-            <div class="p-hero__swiper"></div>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_03.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_04.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_03.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/hero_img_04.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -437,7 +470,7 @@
       </div>
       <!--======== contact-banner ========-->
       <div class="c-contact-banner">
-        <div class="c-contact-banner__container l-container">
+        <div class="c-contact-banner__container c-contact-banner__container__last l-container">
           <div class="c-contact-banner__body">
             <div class="c-contact-banner__body__heading">
               <h2 class="c-heading">資料請求・無料相談フォーム</h2>
@@ -653,6 +686,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

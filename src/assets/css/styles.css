@@ -492,7 +492,7 @@ img {
 .c-contact-banner__container {
   padding: 40px 180px;
 }
-.c-contact-banner__container:last-of-type {
+.c-contact-banner__container__last {
   margin-top: 60px;
 }
 .c-contact-banner__body {
@@ -525,6 +525,19 @@ img {
 }
 .c-contact-banner__body-contact-btn-text {
   font-size: 2rem;
+}
+
+.swiper {
+  padding-top: 50px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.swiper-slide {
+  height: 320px !important;
+  width: auto !important;
 }
 
 .p-hero__container {
