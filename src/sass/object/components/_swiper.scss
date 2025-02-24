@@ -2,6 +2,9 @@
 
 .swiper {
   padding-top: 50px;
+  @include g.mq(md) {
+    padding-top: 30px;
+  }
 }
 
 .swiper-wrapper {
@@ -10,4 +13,8 @@
 .swiper-slide {
   height: 320px !important;
   width: auto !important;
+  @include g.mq(md) {
+    max-width: 120px;
+    max-height: 80px;
+  }
 }

@@ -7,16 +7,25 @@
       background-image: url(../images/hero_bg.png);
       background-size: cover;
       background-repeat: no-repeat;
+      @include g.mq(md) {
+        padding-bottom: 35px;
+      }
     }
     &__body {
       color: g.$primary-heading;
-      padding-top: 80px;
+      padding-top: 140px;
       text-align: center;
+      @include g.mq(md) {
+        padding-top: 80px;
+      }
       &__subHeading {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 15px;
+        @include g.mq(md) {
+          flex-direction: column;
+        }
         &__box {
           display: block;
           background-color: #fff;
@@ -25,19 +34,32 @@
           font-size: 1.125rem;
           font-weight: bold;
           padding: 8px 10px;
+          @include g.mq(md) {
+            font-size: 1rem;
+          }
         }
         &__text {
           font-size: 1.625rem;
           font-weight: bold;
+          @include g.mq(md) {
+            font-size: 1rem;
+          }
         }
       }
       &__heading {
         font-size: 4.5rem;
         padding-top: 27px;
         line-height: 87px;
+        @include g.mq(md) {
+          font-size: 1.875rem;
+          line-height: 37px;
+        }
         strong {
           font-size: 3.25rem;
           font-weight: bold;
+          @include g.mq(md) {
+            font-size: 1.25rem;
+          }
         }
       }
     }
@@ -53,12 +75,20 @@
       max-width: 1000px;
       padding: 60px 0;
       margin: 0 auto;
+      @include g.mq(md) {
+        padding: 30px 15px;
+      }
     }
     &__heading {
       max-width: 620px;
       border-bottom: 4px solid #fff;
       color: #fff;
       padding-bottom: 30px;
+      @include g.mq(md) {
+        border-bottom: 1px solid #fff;
+        text-align: center;
+        padding-bottom: 18px;
+      }
     }
     &__desc {
       max-width: 620px;
@@ -66,17 +96,30 @@
       font-size: 1.25rem;
       line-height: 34px;
       padding-top: 35px;
+      @include g.mq(md) {
+        font-size: 0.875rem;
+        line-height: 22px;
+        padding-top: 19px;
+      }
     }
     &__body {
       background-color: #fff;
       padding: 45px;
       margin-top: 60px;
       opacity: 0.8;
+      @include g.mq(md) {
+        padding: 30px 16px;
+        margin-top: 30px;
+      }
       &__heading {
         color: g.$primary-heading;
         font-size: 1.75rem;
         font-weight: bold;
         text-align: center;
+        @include g.mq(md) {
+          font-size: 1rem;
+          line-height: 22px;
+        }
       }
       &__cards {
         display: flex;
@@ -85,18 +128,37 @@
         row-gap: 40px;
         flex-wrap: wrap;
         padding-top: 50px;
+        @include g.mq(md) {
+          flex-direction: column;
+          padding-top: 30px;
+          row-gap: 23px;
+          column-gap: 0;
+        }
       }
       &__card {
         &:first-child,
         &:nth-child(2),
         &:nth-child(3) {
           width: 31%;
+          @include g.mq(md) {
+            width: 100%;
+          }
         }
         &:nth-child(4),
         &:nth-child(5),
         &:nth-child(6),
         &:last-child {
           width: 23%;
+          @include g.mq(md) {
+            width: 100%;
+          }
+        }
+        &__img {
+          @include g.mq(md) {
+            img {
+              width: 100%;
+            }
+          }
         }
         &__text {
           font-size: 0.875rem;
@@ -111,11 +173,23 @@
     background-color: g.$primary-bg;
     &__container {
       padding: 60px 0;
+      @include g.mq(md) {
+        padding: 30px 0;
+      }
     }
     &__heading {
       text-align: center;
+      @include g.mq(md) {
+        padding: 0 30px;
+      }
       h2 {
         color: g.$primary-heading;
+        span {
+          color: g.$primary-heading;
+        }
+        @include g.mq(md) {
+          color: g.$primary-text;
+        }
       }
       span {
         color: #B4BECD;
@@ -128,20 +202,43 @@
       gap: 36px;
       padding-top: 56px;
       margin: 0 auto;
+      @include g.mq(md) {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 30px;
+        padding-top: 28px;
+      }
     }
     &__card {
+      &__img {
+        img {
+          @include g.mq(md) {
+            width: 100%;
+          }
+        }
+      }
       &__text {
         background-color: #fff;
         padding: 28px;
+        @include g.mq(md) {
+          padding: 20px;
+        }
         &__name {
           font-size: 2rem;
           font-weight: bold;
           white-space: nowrap;
+          @include g.mq(md) {
+            font-size: 1.625rem;
+          }
         }
         span {
           display: block;
           font-size: 1.125rem;
           margin-top: 8px;
+          @include g.mq(md) {
+            font-size: 0.875rem;
+            margin-top: 4px;
+          }
         }
       }
     }
@@ -152,15 +249,32 @@
       justify-content: space-between;
       padding-top: 50px;
       margin: 0 auto;
+      @include g.mq(md) {
+        flex-direction: column;
+        padding: 0 30px;
+        padding-top: 30px;
+      }
       &__body {
         width: 50%;
+        @include g.mq(md) {
+          width: 100%;
+        }
         &__subHeading {
           font-size: 1.875rem;
           font-weight: bold;
+          @include g.mq(md) {
+            font-size: 1.25rem;
+            padding-bottom: 16px;
+          }
         }
         &__text {
           line-height: 32px;
           margin-top: 37px;
+          @include g.mq(md) {
+            margin-top: 16px;
+            line-height: 22px;
+            font-size: 0.875rem;
+          }
         }
       }
     }
@@ -171,10 +285,20 @@
       padding: 50px 90px;
       margin: 0 auto;
       margin-top: 50px;
+      @include g.mq(md) {
+        padding: 20px 15px;
+        margin: 0 15px;
+        margin-top: 27px;
+      }
       &__supplyment {
         font-size: 0.875rem;
         line-height: 20px;
         padding-top: 23px;
+        @include g.mq(md) {
+          font-size: 0.75rem;
+          line-height: 18px;
+          padding-top: 12px;
+        }
         p {
           &:last-child {
             margin-top: 20px;
@@ -185,21 +309,34 @@
     &__roof {
       &:last-child {
         padding-top: 40px;
+        @include g.mq(md) {
+          padding-top: 20px;
+        }
       }
       &__heading {
         display: flex;
         align-items: center;
         gap: 15px;
+        @include g.mq(md) {
+          gap: 6px;
+        }
         span {
           background-color: g.$primary-heading;
           color: #fff;
           font-size: 1.625rem;
           font-weight: bold;
           padding: 9px 11px;
+          @include g.mq(md) {
+            font-size: 0.875rem;
+            padding: 4px 7px;
+          }
         }
         p {
           font-size: 1.5rem;
           font-weight: bold;
+          @include g.mq(md) {
+            font-size: 0.875rem;
+          }
         }
       }
       &__image {
@@ -207,6 +344,21 @@
         &:last-child {
           display: flex;
           justify-content: space-between;
+          @include g.mq(md) {
+            display: block;
+          }
+        }
+        img {
+          &:last-child {
+            margin-top: 15px;
+          }
+        }
+        &__sp {
+          img {
+            @include g.mq(md) {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -219,6 +371,9 @@
     }
     &__block {
       padding: 60px 0;
+      @include g.mq(md) {
+        padding: 30px;
+      }
     }
     &__heading {
       text-align: center;
@@ -233,13 +388,22 @@
       max-width: 1000px;
       margin: 0 auto;
       padding-top: 55px;
+      @include g.mq(md) {
+        padding-top: 28px;
+      }
     }
     &__case {
       background-color: g.$primary-bg;
       border-radius: 3px;
       padding: 34px 46px;
+      @include g.mq(md) {
+        padding: 20px;
+      }
       &:not(:first-child) {
         margin-top: 25px;
+        @include g.mq(md) {
+          margin-top: 15px;
+        }
       }
       &__heading {
         span {
@@ -247,12 +411,23 @@
           font-weight: bold;
           &:first-child {
             font-size: 2.5rem;
+            @include g.mq(md) {
+              font-size: 1rem;
+              font-weight: normal;
+              display: block;
+            }
           }
           &:nth-child(2) {
             font-size: 1.875rem;
+            @include g.mq(md) {
+              font-size: 1rem;
+            }
           }
           &:last-child {
             font-size: 1.625rem;
+            @include g.mq(md) {
+              font-size: 0.875rem;
+            }
           }
         }
       }
@@ -264,12 +439,32 @@
           padding: 6px 7px;
           margin-top: 25px;
           width: fit-content;
+          @include g.mq(md) {
+            font-size: 0.875rem;
+            padding: 5px;
+            margin-top: 20px;
+          }
         }
       }
       &__item {
         margin-top: 13px;
+        list-style: inside;
+          text-indent: -20px;
+          padding-left: 20px;
+        @include g.mq(md) {
+          font-size: 0.875rem;
+          list-style: inside;
+          text-indent: -20px;
+          padding-left: 20px;
+        }
         &:first-child {
           margin-top: 25px;
+        }
+        &__sp {
+          @include g.mq(md) {
+            display: list-item!important;
+            line-height: 22px;
+          }
         }
       }
       &__body {
@@ -278,17 +473,33 @@
         gap: 18px;
         padding: 27px;
         margin-top: 20px;
+        @include g.mq(md) {
+          padding: 20px;
+        }
         &__text {
           width: 100%;
           line-height: 26px;
+          @include g.mq(md) {
+            font-size: 0.8125rem;
+            line-height: 20px;
+            width: 70%;
+          }
           &__voice {
-            background-color: g.$primary-heading;
-            border-radius: 17px;
-            color: #fff;
-            font-size: 1.125rem;
-            padding: 7px 14px;
-            margin-bottom: 14px;
+            display: none;
+            @include g.mq(md) {
+              background-color: g.$primary-heading;
+              border-radius: 17px;
+              display: block;
+              color: #fff;
+              font-size: 1.125rem;
+              padding: 7px 14px;
+              margin-bottom: 14px;
             width: fit-content;
+              font-size: 0.8125rem;
+              padding: 6px;
+              margin: 0;
+              margin-top: 8px;
+            }
           }
         }
       }
@@ -298,6 +509,9 @@
     &__container {
       background-color: g.$primary-bg;
       padding: 60px 0 220px 0;
+      @include g.mq(md) {
+        padding: 30px 30px 180px 30px;
+      }
     }
     &__heading {
       text-align: center;
@@ -318,6 +532,10 @@
       row-gap: 58px;
       padding-top: 80px;
       margin: 0 auto;
+      @include g.mq(md) {
+        row-gap: 30px;
+        padding-top: 40px;
+      }
     }
     &__flow__card {
       width: 430px;
@@ -326,6 +544,11 @@
       border-radius: 3px;
       padding: 35px 10px;
       padding-top: 0;
+      @include g.mq(md) {
+        padding: 25px 10px;
+        padding-top: 0;
+        margin-top: 15px;
+      }
       &::after {
         content: "01";
         position: absolute;
@@ -354,10 +577,19 @@
       &__arrow {
         img {
           height: 30px;
+          @include g.mq(md) {
+            width: 16px;
+            height: 8px;
+          }
         }
       }
       &__icon {
         text-align: center;
+        &__1 {
+          @include g.mq(md) {
+            margin-top: -20px;
+          }
+        }
         &__2,
         &__3,
         &__4 {
@@ -375,6 +607,10 @@
         line-height: 26px;
         padding: 20px;
         text-align: center;
+        @include g.mq(md) {
+          padding: 0;
+          padding-top: 13px;
+        }
       }
     }
   }
@@ -384,11 +620,21 @@
       max-width: 1000px;
       width: 100%;
       background-image: url(../images/chance_banner_bg.png);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
+      border: 6px solid #233E69;
+      border-radius: 20px;
       padding: 45px 0;
       margin: 0 auto;
       text-align: center;
+      @include g.mq(md) {
+        width: auto;
+        background-size: cover;
+        border: 6px solid #233E69;
+        border-radius: 20px;
+        padding: 36px 28px;
+        margin: 0 30px;
+      }
     }
     &__heading {
       p {
@@ -399,6 +645,9 @@
           font-size: 1.875rem;
           font-weight: bold;
           letter-spacing: 2px;
+          @include g.mq(md) {
+            font-size: 0.875rem;
+          }
           &::before,
           &::after {
             background-color: g.$primary-text;
@@ -406,6 +655,10 @@
             content: "";
             height: 2px;
             width: 25px;
+            @include g.mq(md) {
+              width: 16px;
+              height: 1px;
+            }
           }
           &::before {
             margin-right: 10px;
@@ -420,11 +673,18 @@
           color: #D18536;
           font-size: 2.1875rem;
           font-weight: bold;
+          @include g.mq(md) {
+            font-size: 1.125rem;
+          }
         }
         .ga {
           color: g.$primary-text;
           font-size: 23px!important;
           padding-top: 10px;
+          @include g.mq(md) {
+            font-size: 0.75rem!important;
+            padding-top: 2px;
+          }
         }
         &:last-child {
           width: fit-content;
@@ -435,6 +695,12 @@
           margin: 0 auto;
           margin-top: 15px;
           padding-bottom: 7px;
+          @include g.mq(md) {
+            border-bottom: 2px solid #D68738;
+            font-size: 1.25rem;
+            padding-bottom: 13px;
+            margin-top: 10px;
+          }
         }
       }
     }
@@ -444,6 +710,27 @@
       justify-content: center;
       gap: 5px;
       padding-top: 10px;
+      @include g.mq(md) {
+        display: none;
+      }
+      &__sp {
+        display: none;
+        @include g.mq(md) {
+          display: block;
+        }
+        &__flex {
+          @include g.mq(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding-top: 10px; 
+          }
+        }
+        &__desc {
+          margin-top: 9px;
+        }
+      }
       &__supplyment {
         background-color: g.$primary-heading;
         border-radius: 12px;
@@ -451,15 +738,27 @@
         font-size: 0.75rem;
         font-weight: bold;
         padding: 6px 10px;
+        @include g.mq(md) {
+          font-size: 0.625rem;
+          padding: 4px 5px;
+        }
       }
       &__desc {
         font-size: 0.875rem;
         font-weight: bold;
+        @include g.mq(md) {
+          font-size: 0.75rem;
+        }
       }
     }
     &__text {
       line-height: 28px;
       padding-top: 25px;
+      @include g.mq(md) {
+        font-size: 0.8125rem;
+        line-height: 20px;
+        padding-top: 17px;
+      }
     }
   }
   &-comment {
@@ -470,6 +769,10 @@
       padding: 65px 75px;
       margin: 0 auto;
       margin-top: 60px;
+      @include g.mq(md) {
+        padding: 30px 15px;
+        margin-top: 30px;
+      }
     }
     &__heading {
       text-align: center;
@@ -482,11 +785,20 @@
     }
     &__content {
       padding-top: 56px;
+      @include g.mq(md) {
+        padding-top: 28px;
+      }
       &__profile {
         display: flex;
         justify-content: space-between;
+        @include g.mq(md) {
+          flex-direction: column-reverse;
+        }
         &__body {
           padding-top: 15px;
+          @include g.mq(md) {
+            padding-top: 20px;
+          }
           &__company {
             width: fit-content;
             background-color: g.$primary-heading;
@@ -495,19 +807,36 @@
             display: flex;
             align-items: center;
             padding: 8px 10px;
+            @include g.mq(md) {
+              font-size: 0.875rem;
+              padding: 6px;
+            }
           }
           &__name {
             padding-top: 18px;
+            @include g.mq(md) {
+              padding-top: 14px;
+            }
             &__position {
               color: #5E7392;
               font-size: 1.25rem;
+              @include g.mq(md) {
+                font-size: 0.75rem;
+              }
             }
             &__name {
               font-size: 1.375rem;
               font-weight: bold;
               padding-top: 12px;
+              @include g.mq(md) {
+                font-size: 0.75rem;
+                padding-top: 8px;
+              }
               span {
                 font-size: 2.5rem;
+                @include g.mq(md) {
+                  font-size: 1.375rem;
+                }
               }
             }
           }
@@ -516,15 +845,28 @@
             font-weight: bold;
             line-height: 40px;
             padding-top: 30px;
+            @include g.mq(md) {
+              font-size: 1rem;
+              line-height: 22px;
+              padding-top: 11px;
+            }
           }
         }
       }
       &__body {
         line-height: 26px;
         padding-top: 40px;
+        @include g.mq(md) {
+          font-size: 0.8125rem;
+          line-height: 20px;
+          padding-top: 20px;
+        }
         p {
           &:not(:first-child) {
             margin-top: 30px;
+            @include g.mq(md) {
+              margin-top: 13px;
+            }
           }
         }
       }
@@ -536,12 +878,19 @@
       background-color: #E09554;
       padding: 60px 0;
       margin-top: 60px;
+      @include g.mq(md) {
+        margin-top: 0;
+        padding: 30px 15px;
+      }
     }
     &__block {
       max-width: 1000px;
       background-color: #fff;
       padding: 60px 130px;
       margin: 0 auto;
+      @include g.mq(md) {
+        padding: 30px 25px;
+      }
     }
     &__heading {
       text-align: center;
@@ -551,12 +900,23 @@
     }
     &__form {
       padding-top: 70px;
+      @include g.mq(md) {
+        padding-top: 30px;
+      }
       &__item {
         display: flex;
         align-items: center;
         width: 100%;
+        @include g.mq(md) {
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 13px;
+        }
         &:not(:first-child) {
           padding-top: 46px;
+          @include g.mq(md) {
+            padding-top: 27px;
+          }
         }
         &__address,
         &__contact,
@@ -590,6 +950,9 @@
           gap: 5px;
           label {
             font-weight: bold;
+            @include g.mq(md) {
+              font-size: 0.875rem;
+            }
           }
           &__privacy {
             align-items: flex-start;
@@ -606,6 +969,9 @@
             background-color: #F2F2F2;
             padding-left: 8px;
             font-size: 0.875rem;
+            &::placeholder {
+              color: #C7C7C7;
+            }
             .gray {
               color: #C7C7C7;
             }
@@ -614,11 +980,17 @@
             height: 183px;
             padding-top: 8px;
             resize: none;
+            @include g.mq(md) {
+              height: 130px;
+            }
           }
           &__flex{
             display: flex;
             align-items: center;
             gap: 100px;
+            @include g.mq(md) {
+              gap: 30px;
+            }
           }
           &__radio {
             display: flex;
@@ -631,8 +1003,16 @@
             }
           }
           &__privacy {
+            label {
+              @include g.mq(md) {
+                font-size: 0.875rem;
+              }
+            }
             &__text {
               margin-top: 16px;
+              @include g.mq(md) {
+                font-size: 0.6875rem;
+              }
               a {
                 border-bottom: 1px solid #D68738;
                 color: #D68738;
@@ -654,6 +1034,11 @@
             display: flex;
             align-items: center;
             gap: 23px;
+            @include g.mq(md) {
+              align-items: normal;
+              flex-direction: column;
+              gap: 9px;
+            }
           }
           &__inner {
             display: flex;
@@ -666,6 +1051,9 @@
           &__postCode {
             input {
               width: 73%;
+              @include g.mq(md) {
+                width: 100%;
+              }
             }
           }
           &__prefecture {
@@ -681,6 +1069,9 @@
           &__city,
           &__houseNumber {
             padding-top: 12px;
+            @include g.mq(md) {
+              padding-top: 9px;
+            }
           }
         }
         &__submit {

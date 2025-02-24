@@ -38,22 +38,22 @@
     <!--======== header ========-->
     <header class="header">
       <div class="header-container">
-        <div class="header-logo">
+        <a href="index.php" class="header-logo">
           <h1>
             <img src="assets/images/header_logo.png" alt="">
           </h1>
           <span class="pc-only">ガルバリウム鋼板屋根(天然石付き)</span>
-        </div>
+        </a>
         <a href="#contact" class="header-contact-btn c-contact-btn pc-only">
           <div class="header-contact-btn-supplyment c-contact-btn-supplyment">無料</div>
           <div class="header-contact-btn-text c-contact-btn-text">資料請求・無料相談フォーム</div>
         </a>
-        <div class="sp-hamburger sp-only">
+        <div class="sp-hamburger">
           <span class="sp-hamburger__bar sp-hamburger__bar__1"></span>
           <span class="sp-hamburger__bar sp-hamburger__bar__2"></span>
           <span class="sp-hamburger__bar sp-hamburger__bar__3"></span>
         </div>
-        <nav class="sp-header-nav sp-only">
+        <nav id="show" class="sp-header-nav">
           <ul class="sp-header-nav__list">
             <li class="sp-header-nav__item"><a href="#improvement">オールシーズン屋根材の特徴</a></li>
             <li class="sp-header-nav__item"><a href="#quality">高い品質とデザイン</a></li>
@@ -62,8 +62,8 @@
             <li class="sp-header-nav__item"><a href="#comment">導入企業様の声</a></li>
           </ul>
           <a href="#contact" class="sp-header-contact-btn header-contact-btn c-contact-btn sp-only">
-            <div class="header-contact-btn-supplyment c-contact-btn-supplyment">無料</div>
-            <div class="header-contact-btn-text c-contact-btn-text">資料請求・無料相談フォーム</div>
+            <div class="header-contact-btn-supplyment sp-header-contact-btn-supplyment c-contact-btn-supplyment">無料</div>
+            <div class="header-contact-btn-text sp-header-contact-btn-text c-contact-btn-text">資料請求・無料相談フォーム</div>
           </a>
         </nav>
       </div>
@@ -83,7 +83,6 @@
                 <p><strong>カバー工法で“強み”を手にいれる</strong><br>オールシーズンの屋根材<br><strong>を導入しませんか?</strong></p>
               </div>
             </div>
-            <!-- === swiperの実装なので最後に実装 === -->
             <div class="swiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
@@ -127,8 +126,8 @@
             </div>
             <div class="c-contact-banner__body__text">
               <p>
-                初めての導入マニュアルや事例集などお役立ち情報が満載の資料を差し上げています。<br>
-                サンプル送付も可能となります。ご気軽にご相談ください！
+                初めての導入マニュアルや事例集など<br class="sp-only">お役立ち情報が満載の資料を差し上げています。<br>
+                サンプル送付も可能となります。<br class="sp-only">ご気軽にご相談ください！
               </p>
             </div>
             <a href="#contact" class="c-contact-banner__body-contact-btn c-contact-btn">
@@ -147,16 +146,13 @@
             </div>
             <div class="p-improvement__desc">
               <p>
-                職人不足の中、施工性と利益性を高めるカバー工法での<br>
-                ガルバリウム鋼板屋根（天然石付き）施工は屋根リフォーム業者様や<br>
-                屋根工事業者様、お施主様にとっても最適な提案と考えております。
+                職人不足の中、施工性と利益性を高めるカバー工法での<br class="pc-only">ガルバリウム鋼板屋根（天然石付き）施工は屋根リフォーム業者様や<br class="pc-only">屋根工事業者様、お施主様にとっても最適な提案と考えております。
               </p>
             </div>
             <div class="p-improvement__body">
               <div class="p-improvement__body__heading">
                 <h3>
-                  オールシーズンのチップストーンコートガルバリウム屋根材は<br>
-                  地震、台風など災害の多い日本の風土に最適な屋根材です
+                  オールシーズンのチップストーンコートガルバリウム屋根材は<br class="pc-only">地震、台風など災害の多い日本の風土に最適な屋根材です
                 </h3>
               </div>
               <div class="p-improvement__body__cards">
@@ -173,7 +169,7 @@
                     <img src="assets/images/improvement_card_img_02.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>地震大国日本に最適な<br>強くて軽い屋根材</p>
+                    <p>地震大国日本に最適な<br class="pc-only">強くて軽い屋根材</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -189,7 +185,7 @@
                     <img src="assets/images/improvement_card_img_04.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>特殊な工具不要。他の屋根材に<br>比べ、石粒のマット状の仕上げ。<br>仕上がりが綺麗で高級感あり</p>
+                    <p>特殊な工具不要。他の屋根材に<br class="pc-only">比べ、<br class="sp-only">石粒のマット状の仕上げ。<br>仕上がりが綺麗で高級感あり</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -197,7 +193,7 @@
                     <img src="assets/images/improvement_card_img_05.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>北欧、中東、アフリカなど<br>寒暖差の激しい環境の厳しい<br>地域で長年の実績</p>
+                    <p>北欧、中東、アフリカなど<br class="pc-only">寒暖差の激しい環境の厳しい<br class="pc-only">地域で長年の実績</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -205,7 +201,7 @@
                     <img src="assets/images/improvement_card_img_06.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>石付屋根材は石粒の効果で<br>雪止め効果が強いため<br>安心、安全な屋根材</p>
+                    <p>石付屋根材は石粒の効果で<br class="pc-only">雪止め効果が強いため<br class="pc-only">安心、安全な屋根材</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -213,7 +209,7 @@
                     <img src="assets/images/improvement_card_img_07.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>ヨーロッパの自然石と洗練された<br>色合いがマッチングした<br>ハイクオリティな屋根材</p>
+                    <p>ヨーロッパの自然石と洗練された<br>色合いがマッチングした<br class="pc-only">ハイクオリティな屋根材</p>
                   </div>
                 </div>
               </div>
@@ -226,7 +222,8 @@
         <div class="p-quality__container l-container">
           <div class="p-quality__block">
             <div class="p-quality__heading">
-              <h2 class="c-heading">欧州各国で評価され、愛された、高い品質とデザイン</h2>
+              <h2 class="c-heading pc-only">欧州各国で評価され、愛された、高い品質とデザイン</h2>
+              <h2 class="c-heading sp-only">欧州各国で評価され、愛された<br>高い品質とデザイン</h2>
               <span class="c-heading-text">High quality and design that is appreciated and loved in European countries</span>
             </div>
             <div class="p-quality__cards">
@@ -261,11 +258,12 @@
             <div class="p-quality__achivements">
               <div class="p-quality__achivements__body">
                 <h3 class="p-quality__achivements__body__subHeading c-subHeading">世界120カ国以上50年以上の実績</h3>
-                <p class="p-quality__achivements__body__text">ヨーロッパ製自然石＋ガルバリウム鋼板高級感あふれるフランス石などの自然石が醸し出す深みのある美しさ石仕上げによる高級感と保護効果、自然石が紫外線や経年劣化から鋼板を守り塗り替え要らず。石付屋根材は欧州、北米、中東、オセアニアなど世界120カ国以上の国で採用され、60年以上の実績があります。</p>
+                <p class="p-quality__achivements__body__text pc-only">ヨーロッパ製自然石＋ガルバリウム鋼板高級感あふれるフランス石などの自然石が醸し出す深みのある美しさ石仕上げによる高級感と保護効果、自然石が紫外線や経年劣化から鋼板を守り塗り替え要らず。石付屋根材は欧州、北米、中東、オセアニアなど世界120カ国以上の国で採用され、60年以上の実績があります。</p>
               </div>
               <div class="p-quality__achivements__image">
                 <img src="assets/images/quality_achievements_img.png" alt="">
               </div>
+              <p class="p-quality__achivements__body__text sp-only">ヨーロッパ製自然石＋ガルバリウム鋼板高級感あふれるフランス石などの自然石が醸し出す深みのある美しさ石仕上げによる高級感と保護効果、自然石が紫外線や経年劣化から鋼板を守り塗り替え要らず。石付屋根材は欧州、北米、中東、オセアニアなど世界120カ国以上の国で採用され、60年以上の実績があります。</p>
             </div>
             <div class="p-quality__roofs">
               <div class="p-quality__roofs__body">
@@ -274,8 +272,12 @@
                     <span>ヴィクセン屋根材 製品仕様</span>
                     <p>本体形状</p>
                   </div>
-                  <div class="p-quality__roof__image">
+                  <div class="p-quality__roof__image pc-only">
                     <img src="assets/images/roof_specitification_img_01.png" alt="">
+                  </div>
+                  <div class="p-quality__roof__image p-quality__roof__image__sp sp-only">
+                    <img src="assets/images/sp_roof_specitification_img_01.png" alt="">
+                    <img src="assets/images/sp_roof_specitification_img_02.png" alt="">
                   </div>
                 </div>
                 <div class="p-quality__roof">
@@ -322,15 +324,16 @@
                 </div>
                 <ul class="p-construction__case__list">
                   <div class="p-construction__case__list__text">施工内容</div>
-                  <li class="p-construction__case__item">・古い金属屋根のを撤去、オールシーズンのガルバリウム屋根材を設置</li>
-                  <li class="p-construction__case__item">・わずか数日で施工完了</li>
+                  <li class="p-construction__case__item">古い金属屋根のを撤去、オールシーズンのガルバリウム屋根材を設置</li>
+                  <li class="p-construction__case__item">わずか数日で施工完了</li>
                 </ul>
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_01.png" alt="">
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
-                    <div class="p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>
                     <p>雪の多い地方ですので、突然の落雪の不安や雪による屋根の痛みや、雨漏りなど心配していましたが、石付屋根材に変えてしっかりガード。雪止め効果、耐久性もよく、短期工事であまりストレスがなくて助かりました。</p>
                   </div>
                 </div>
@@ -345,15 +348,16 @@
                 </div>
                 <ul class="p-construction__case__list">
                   <div class="p-construction__case__list__text">施工内容</div>
-                  <li class="p-construction__case__item">・瓦を撤去して軽量化&耐震性アップ</li>
-                  <li class="p-construction__case__item">・瓦職人がそのまま施工でき、工期も短縮</li>
+                  <li class="p-construction__case__item">瓦を撤去して軽量化&耐震性アップ</li>
+                  <li class="p-construction__case__item">瓦職人がそのまま施工でき、工期も短縮</li>
                 </ul>
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_02.png" alt="">
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
-                    <div class="p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>
                     <p>地震に備えて屋根を軽くしたかったのですが、瓦文化の地域なので瓦を全部撤去するのも抵抗がありました。カバー工法にしたことで費用も抑えられ、仕上がりの見た目も高級感があって大満足です!</p>
                   </div>
                 </div>
@@ -368,15 +372,17 @@
                 </div>
                 <ul class="p-construction__case__list">
                   <div class="p-construction__case__list__text">施工内容</div>
-                  <li class="p-construction__case__item">・安全性を高めるため、老朽化したスレートを撤去せずカバー工法します。</li>
-                  <li class="p-construction__case__item">・既設の防水紙に加え、カバー工法でも防水紙を張りますので雨漏りの心配はありません。</li>
+                  <li class="p-construction__case__item p-construction__case__item__sp sp-only">安全性を高めるため、老朽化したスレートを撤去せずカバー工法します。既設の防水紙に加え、カバー工法でも防水紙を張りますので　雨漏りの心配はありません。</li>
+                  <li class="p-construction__case__item pc-only">安全性を高めるため、老朽化したスレートを撤去せずカバー工法します。</li>
+                  <li class="p-construction__case__item pc-only">既設の防水紙に加え、カバー工法でも防水紙を張りますので雨漏りの心配はありません。</li>
                 </ul>
                 <div class="p-construction__case__body">
                   <div class="p-construction__case__body__icon">
                     <img src="assets/images/case_icon_03.png" alt="">
+                    <div class="p-construction__case__body__icon__box p-construction__case__body__text__voice">お客様の声</div>
                   </div>
                   <div class="p-construction__case__body__text">
-                    <div class="p-construction__case__body__text__voice">お客様の声</div>
+                    <div class="p-construction__case__body__text__voice pc-only">お客様の声</div>
                     <p>工事期間が想像より短く、普段通り生活できました。これで30年クラスの耐久性があるなんてじられないほど。築年数が経つ家なので雨漏りが怖かったけど、本当に安心です！</p>
                   </div>
                 </div>
@@ -395,7 +401,7 @@
             </div>
             <div class="p-introduce__flow__cards">
               <div class="p-introduce__flow__card">
-                <div class="p-introduce__flow__card__icon">
+                <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__1">
                   <img src="assets/images/introduce_icon_01.png" alt="">
                 </div>
                 <div class="p-introduce__flow__card__heading">
@@ -406,7 +412,8 @@
                 </div>
               </div>
               <div class="p-introduce__flow__card__arrow">
-                <img src="assets/images/arrow_icon.png" alt="">
+                <img class="pc-only" src="assets/images/arrow_icon.png" alt="">
+                <img class="sp-only" src="assets/images/arrow_bottom_icon.png" alt="">
               </div>
               <div class="p-introduce__flow__card p-introduce__flow__card__02">
                 <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__2">
@@ -418,6 +425,9 @@
                 <div class="p-introduce__flow__card__text">
                   <p>オンライン講習や実際の現場見学<br>などで、短期間でスキル習得可能</p>
                 </div>
+              </div>
+              <div class="p-introduce__flow__card__arrow sp-only">
+                <img class="p-introduce__flow__card__arrow__icon" src="assets/images/arrow_bottom_icon.png" alt="">
               </div>
               <div class="p-introduce__flow__card p-introduce__flow__card__03">
                 <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__3">
@@ -431,7 +441,8 @@
                 </div>
               </div>
               <div class="p-introduce__flow__card__arrow">
-                <img src="assets/images/arrow_icon.png" alt="">
+                <img class="pc-only" src="assets/images/arrow_icon.png" alt="">
+                <img class="sp-only" src="assets/images/arrow_bottom_icon.png" alt="">
               </div>
               <div class="p-introduce__flow__card p-introduce__flow__card__04">
                 <div class="p-introduce__flow__card__icon p-introduce__flow__card__icon__4">
@@ -454,13 +465,22 @@
           <div class="p-chance-banner__block">
             <div class="p-chance-banner__heading">
               <p><span>今</span><span class="ga">が</span>チャンス!</p>
-              <p>オールシーズン屋根材 代理店キャンペーン</p>
+              <p>オールシーズン屋根材 <br class="sp-only">代理店キャンペーン</p>
             </div>
             <div class="p-chance-banner__limited">
               <div class="p-chance-banner__limited__supplyment">期間限定</div>
               <div class="p-chance-banner__limited__desc">
-                <p>特別仕入れ価格 まとまった数の受注でさらに優遇が可能</p>
+                <p class="pc-only">特別仕入れ価格 まとまった数の受注でさらに優遇が可能</p>
               </div>
+            </div>
+            <div class="p-chance-banner__limited__sp">
+              <div class="p-chance-banner__limited__sp__flex">
+                <div class="p-chance-banner__limited__supplyment">期間限定</div>
+                <div class="p-chance-banner__limited__desc">
+                  <p>特別仕入れ価格</p>
+                </div>
+              </div>
+              <p class="p-chance-banner__limited__desc p-chance-banner__limited__sp__desc">まとまった数の受注でさらに優遇が可能</p>
             </div>
             <div class="p-chance-banner__text">
               <p>施工研修・販促ツールを[無償提供]新規参入でもスムーズにスタートできます。<br>エリア独占契約も相談可。周辺業者との差別化を徹底したい方におすすめです！</p>
@@ -478,8 +498,8 @@
             </div>
             <div class="c-contact-banner__body__text">
               <p>
-                初めての導入マニュアルや事例集などお役立ち情報が満載の資料を差し上げています。<br>
-                サンプル送付も可能となります。ご気軽にご相談ください！
+                初めての導入マニュアルや事例集など<br class="sp-only">お役立ち情報が満載の資料を差し上げています。<br>
+                サンプル送付も可能となります。<br class="sp-only">ご気軽にご相談ください！
               </p>
             </div>
             <a href="#contact" class="c-contact-banner__body-contact-btn c-contact-btn">
@@ -582,7 +602,7 @@
                   <label>メールアドレス</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="email">
+                  <input type="text" name="email" placeholder="例）info@test.jp">
                 </div>
               </div>
               <!-- === 電話番号 === -->
@@ -592,7 +612,7 @@
                   <label>電話番号</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="phoneNumber">
+                  <input type="text" name="phoneNumber" placeholder="例）000-0000-0000">
                 </div>
               </div>
               <!-- === 住所 === -->
@@ -605,7 +625,7 @@
                   <div class="p-contact-form__form__item__address__input__flex">
                     <div class="p-contact-form__form__item__address__input__postCode p-contact-form__form__item__address__input__inner">
                       <span>郵便番号</span>
-                      <input type="text" name="postCode">
+                      <input type="text" name="postCode" placeholder="例）0000000">
                     </div>
                     <div class="p-contact-form__form__item__address__input__prefecture p-contact-form__form__item__address__input__inner">
                       <span>都道府県</span>
@@ -655,7 +675,7 @@
               <div class="p-contact-form__form__item p-contact-form__form__item__privacy">
                 <div class="p-contact-form__form__item__label p-contact-form__form__item__label__privacy">
                   <span class="p-contact-form__form__item__required p-contact-form__form__item__required__privacy">必須</span>
-                  <label>個人情報の<br>取扱いについて</label>
+                  <label>個人情報の<br class="pc-only">取扱いについて</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
                   <div class="p-contact-form__form__item__input__flex p-contact-form__form__item__input__privacy">

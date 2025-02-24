@@ -11,5 +11,14 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    @include g.mq(md) {
+      gap: 15px;
+    }
+  }
+  &-copyright {
+    font-size: 0.875rem;
+    @include g.mq(md) {
+      font-size: 0.625rem;
+    }
   }
 }

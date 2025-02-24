@@ -3,9 +3,16 @@
 .c-heading {
   font-size: 2.625rem;
   font-weight: bold;
+  @include g.mq(md) {
+    font-size: 1.375rem;
+  }
   &-text {
     font-weight: bold;
     display: block;
     margin-top: 15px;
+    @include g.mq(md) {
+      font-size: 0.625rem;
+      margin-top: 8px;
+    }
   }
 }

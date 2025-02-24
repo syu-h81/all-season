@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include g.mq(md) {
+    justify-content: center;
+    gap: 10px;
+  }
   &-supplyment {
     background-color: #fff;
     border-radius: 22px;

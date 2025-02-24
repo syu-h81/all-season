@@ -21,3 +21,15 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+$(function() {
+  //ハンバーガーボタンの実装
+  $('.sp-hamburger').on('click', function() {
+    $('.sp-hamburger__bar').toggleClass('active');
+    $('.sp-header-nav').toggleClass('open');
+  });
+  $('.sp-header-nav').on('click', function() {
+    $('.sp-hamburger__bar').toggleClass('active');
+    $(this).toggleClass('open');
+  });
+});
