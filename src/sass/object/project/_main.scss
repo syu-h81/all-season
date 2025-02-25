@@ -210,6 +210,7 @@
       }
     }
     &__card {
+      flex: 1;
       &__img {
         img {
           @include g.mq(md) {
@@ -344,13 +345,17 @@
         &:last-child {
           display: flex;
           justify-content: space-between;
+          gap: 30px;
           @include g.mq(md) {
             display: block;
           }
         }
         img {
+          flex: 1;
           @include g.mq(md) {
             width: 100%;
+            border-top: 1.5px solid g.$primary-heading;
+            border-bottom: 1.5px solid g.$primary-heading;
           }
           &:last-child {
             @include g.mq(md) {
@@ -483,8 +488,13 @@
         @include g.mq(md) {
           padding: 20px;
         }
+        &__icon {
+          img {
+            max-width: 100px;
+          }
+        }
         &__text {
-          width: 100%;
+          width: 90%;
           line-height: 26px;
           @include g.mq(md) {
             font-size: 0.8125rem;
@@ -590,7 +600,8 @@
         }
       }
       &__icon {
-        text-align: center;
+        max-width: 95px;
+        margin: 0 auto;
         &__1 {
           @include g.mq(md) {
             margin-top: -20px;
@@ -611,7 +622,7 @@
       }
       &__text {
         line-height: 26px;
-        padding: 20px;
+        padding: 20px 0;
         text-align: center;
         @include g.mq(md) {
           padding: 0;
@@ -855,6 +866,13 @@
               font-size: 1rem;
               line-height: 22px;
               padding-top: 11px;
+            }
+          }
+        }
+        &__img {
+          img {
+            @include g.mq(md) {
+              width: 100%;
             }
           }
         }

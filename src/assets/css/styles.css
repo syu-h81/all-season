@@ -734,6 +734,7 @@ img {
 }
 
 .swiper-slide {
+  max-width: 329px;
   height: 320px !important;
   width: auto !important;
 }
@@ -980,6 +981,9 @@ img {
     padding-top: 28px;
   }
 }
+.p-quality__card {
+  flex: 1;
+}
 @media screen and (max-width: 768px) {
   .p-quality__card__img img {
     width: 100%;
@@ -1135,15 +1139,21 @@ img {
 .p-quality__roof__image:last-child {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 @media screen and (max-width: 768px) {
   .p-quality__roof__image:last-child {
     display: block;
   }
 }
+.p-quality__roof__image img {
+  flex: 1;
+}
 @media screen and (max-width: 768px) {
   .p-quality__roof__image img {
     width: 100%;
+    border-top: 1.5px solid #223E69;
+    border-bottom: 1.5px solid #223E69;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1287,8 +1297,11 @@ img {
     padding: 20px;
   }
 }
+.p-construction__case__body__icon img {
+  max-width: 100px;
+}
 .p-construction__case__body__text {
-  width: 100%;
+  width: 90%;
   line-height: 26px;
 }
 @media screen and (max-width: 768px) {
@@ -1397,7 +1410,8 @@ img {
   }
 }
 .p-introduce__flow__card__icon {
-  text-align: center;
+  max-width: 95px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .p-introduce__flow__card__icon__1 {
@@ -1416,7 +1430,7 @@ img {
 }
 .p-introduce__flow__card__text {
   line-height: 26px;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -1701,6 +1715,11 @@ img {
     font-size: 1rem;
     line-height: 22px;
     padding-top: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-comment__content__profile__img img {
+    width: 100%;
   }
 }
 .p-comment__content__body {

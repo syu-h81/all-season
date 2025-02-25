@@ -11,6 +11,7 @@
   transition-timing-function: linear;
 }
 .swiper-slide {
+  max-width: 329px;
   height: 320px !important;
   width: auto !important;
   @include g.mq(md) {
