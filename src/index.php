@@ -38,6 +38,9 @@
   <div class="l-wrapper">
     <!--======== header ========-->
     <header class="header">
+    <div class="sp-header-modal-inner">
+          <div class="sp-header-modal"></div>
+        </div>
       <div class="header-container">
         <a href="index.php" class="header-logo">
           <h1>
@@ -56,11 +59,11 @@
         </div>
         <nav id="show" class="sp-header-nav">
           <ul class="sp-header-nav__list">
-            <li class="sp-header-nav__item"><a href="#improvement">オールシーズン屋根材の特徴</a></li>
-            <li class="sp-header-nav__item"><a href="#quality">高い品質とデザイン</a></li>
-            <li class="sp-header-nav__item"><a href="#construction">施工事例 & お客様の声</a></li>
-            <li class="sp-header-nav__item"><a href="#introduce">導入の流れ</a></li>
-            <li class="sp-header-nav__item"><a href="#comment">導入企業様の声</a></li>
+            <a href="#improvement" class="sp-header-nav__item"><li>オールシーズン屋根材の特徴</li></a>
+            <a href="#quality" class="sp-header-nav__item"><li>高い品質とデザイン</li></a>
+            <a href="#construction" class="sp-header-nav__item"><li>施工事例 & お客様の声</li></a>
+            <a href="#introduce" class="sp-header-nav__item"><li>導入の流れ</li></a>
+            <a href="#comment" class="sp-header-nav__item"><li>導入企業様の声</li></a>
           </ul>
           <a href="#contact" class="sp-header-contact-btn header-contact-btn c-contact-btn sp-only">
             <div class="header-contact-btn-supplyment sp-header-contact-btn-supplyment c-contact-btn-supplyment">無料</div>

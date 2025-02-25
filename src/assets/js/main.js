@@ -26,10 +26,17 @@ $(function() {
   //ハンバーガーボタンの実装
   $('.sp-hamburger').on('click', function() {
     $('.sp-hamburger__bar').toggleClass('active');
+    $('.sp-header-modal').toggleClass('fadeIn');
+    $('.sp-header-nav').toggleClass('open');
+  });
+  $('.sp-header-modal').on('click', function() {
+    $('.sp-hamburger__bar').toggleClass('active');
+    $(this).toggleClass('fadeIn');
     $('.sp-header-nav').toggleClass('open');
   });
   $('.sp-header-nav').on('click', function() {
     $('.sp-hamburger__bar').toggleClass('active');
+    $('.sp-header-modal').toggleClass('fadeIn');
     $(this).toggleClass('open');
   });
 });
