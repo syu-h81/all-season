@@ -25,6 +25,7 @@
         gap: 15px;
         @include g.mq(md) {
           flex-direction: column;
+          gap: 8px;
         }
         &__box {
           display: block;
@@ -42,7 +43,7 @@
           font-size: 1.625rem;
           font-weight: bold;
           @include g.mq(md) {
-            font-size: 1rem;
+            font-size: 0.875rem;
           }
         }
       }
@@ -50,6 +51,7 @@
         font-size: 4.5rem;
         padding-top: 27px;
         line-height: 87px;
+        font-weight: bold;
         @include g.mq(md) {
           font-size: 1.875rem;
           line-height: 37px;
@@ -104,7 +106,7 @@
     }
     &__body {
       background-color: #fff;
-      padding: 45px;
+      padding: 45px 30px;
       margin-top: 60px;
       opacity: 0.8;
       @include g.mq(md) {
@@ -491,6 +493,9 @@
         &__icon {
           img {
             max-width: 100px;
+            @include g.mq(md) {
+              max-width: 74px;
+            }
           }
         }
         &__text {
@@ -503,7 +508,7 @@
           }
           &__voice {
             background-color: g.$primary-heading;
-            border-radius: 17px;
+            border-radius: 30px;
             color: #fff;
             font-size: 1.125rem;
             padding: 7px 14px;
@@ -514,6 +519,7 @@
               padding: 6px;
               margin: 0 auto;
               margin-top: 8px;
+              white-space: nowrap;
             }
           }
         }
@@ -881,8 +887,8 @@
         line-height: 26px;
         padding-top: 40px;
         @include g.mq(md) {
-          font-size: 0.8125rem;
-          line-height: 20px;
+          font-size: 1rem;
+          line-height: 26px;
           padding-top: 20px;
         }
         p {
@@ -1008,6 +1014,9 @@
               height: 130px;
             }
           }
+          select {
+            color: #C7C7C7;
+          }
           &__flex{
             display: flex;
             align-items: center;
@@ -1057,6 +1066,7 @@
           &__flex {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 23px;
             @include g.mq(md) {
               align-items: normal;
@@ -1070,6 +1080,22 @@
             gap: 5px;
             span {
               width: 100px;
+            }
+            .option-arrow {
+              position: relative;
+              width: 100%;
+              &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-bottom: solid 1.5px #A0A0A0;
+                border-right: solid 1.5px #A0A0A0;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 45%;
+                right: 10px;
+                transform: translateY(-50%) rotate(45deg);
+              }
             }
           }
           &__postCode {
@@ -1112,6 +1138,11 @@
           margin: 0 auto;
           margin-top: 40px;
           padding-top: 0!important;
+          padding-left: 40px;
+          &:hover {
+            opacity: 0.7;
+            transition: opacity 0.2s linear;
+          }
         }
       }
     }

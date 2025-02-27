@@ -40,3 +40,19 @@ $(function() {
     $(this).toggleClass('open');
   });
 });
+
+//selectタグの初期値の文字色の変更
+/*function changeColor(e){
+  if( e.value == '' ){
+      e.style.color = '#C7C7C7';
+  }else{
+      e.style.color = '#210000';
+  }
+}*/
+/*function changeColor(e){
+  if( e.value == 0 ){
+      e.style.color = '';
+  }else{
+      e.style.color = '#210000';
+  }
+}*/

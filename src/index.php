@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
   <title>株式会社オールシーズン</title>
 
   <!-- OGP -->
@@ -156,7 +157,7 @@
             <div class="p-improvement__body">
               <div class="p-improvement__body__heading">
                 <h3>
-                  オールシーズンのチップストーンコートガルバリウム屋根材は<br class="pc-only">地震、台風など災害の多い日本の風土に最適な屋根材です
+                  オールシーズンのチップストーンコート<br class="sp-only">ガルバリウム屋根材は<br class="pc-only">地震、台風など<br class="sp-only">災害の多い日本の風土に最適な屋根材です
                 </h3>
               </div>
               <div class="p-improvement__body__cards">
@@ -197,7 +198,7 @@
                     <img src="assets/images/improvement_card_img_05.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>北欧、中東、アフリカなど<br class="pc-only">寒暖差の激しい環境の厳しい<br class="pc-only">地域で長年の実績</p>
+                    <p>北欧、中東、アフリカなど<br>寒暖差の厳しい環境・地域で<br class="pc-only">長年の実績</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -205,7 +206,7 @@
                     <img src="assets/images/improvement_card_img_06.png" alt="">
                   </div>
                   <div class="p-improvement__body__card__text">
-                    <p>石付屋根材は石粒の効果で<br class="pc-only">雪止め効果が強いため<br class="pc-only">安心、安全な屋根材</p>
+                    <p>石付屋根材は石粒の効果で<br>雪止め効果が強いため<br class="pc-only">安心、安全な屋根材</p>
                   </div>
                 </div>
                 <div class="p-improvement__body__card">
@@ -441,7 +442,7 @@
                   <h3>販売開始＆集客サポート</h3>
                 </div>
                 <div class="p-introduce__flow__card__text">
-                  <p>代理店様向けに販促ツール、営業資料を無償提供!<br>技術相談や見積サポートはいつでもOK</p>
+                  <p>代理店様向けに販促ツール、<br class="sp-only">営業資料を無償提供!<br>技術相談や見積サポートはいつでもOK</p>
                 </div>
               </div>
               <div class="p-introduce__flow__card__arrow">
@@ -456,7 +457,7 @@
                   <h3>フォローアップ＆継続支援</h3>
                 </div>
                 <div class="p-introduce__flow__card__text">
-                  <p>新作・新仕様情報を迅速にフィードバック!ビジネス展開のアドバイスや共同プロモーションも実施</p>
+                  <p>新作・新仕様情報を迅速にフィードバック!<br class="sp-only">ビジネス展開のアドバイスや共同<br class="sp-only">プロモーションも実施</p>
                 </div>
               </div>
             </div>
@@ -645,14 +646,25 @@
                           "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
                       ];
                       ?>
-                      <select name="prefecture">
-                        <option value="" disabled selected>選択してください</option>
-                        <?php foreach ($prefectures as $prefecture): ?>
-                          <option value="<?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>">
-                            <?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>
-                          </option>
-                        <?php endforeach; ?>
-                      </select>
+                      <script>
+                        function changeColor(e){
+                          if( e.value == 0 ){
+                              e.style.color = '';
+                          }else{
+                              e.style.color = '#210000';
+                          }
+                        }
+                      </script>
+                      <div class="option-arrow">
+                        <select name="prefecture" onchange="changeColor(this)">
+                          <option value="">選択してください</option>
+                          <?php foreach ($prefectures as $prefecture): ?>
+                            <option value="<?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>">
+                              <?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>
+                            </option>
+                          <?php endforeach; ?>
+                        </select>
+                      </div>
                     </div>
                   </div>
                   <div class="p-contact-form__form__item__address__input__city p-contact-form__form__item__address__input__inner">
@@ -690,9 +702,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-contact-form__form__item__submit p-contact-form__form__item">
-                <input type="submit" value="入力内容の確認画面へ">
-              </div>
+              <input type="submit" value="入力内容の確認画面へ" class="p-contact-form__form__item__submit p-contact-form__form__item">
             </form>
           </div>
         </div>

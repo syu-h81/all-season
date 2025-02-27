@@ -1,3 +1,66 @@
+<?php
+// メールの送信先
+$to = "your-email@example.com"; // 送信先のメールアドレスに変更
+
+// フォームからのデータを取得
+$name        = isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8') : '';
+$company     = isset($_POST['company']) ? htmlspecialchars($_POST['company'], ENT_QUOTES, 'UTF-8') : '';
+$email       = isset($_POST['email']) ? htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8') : '';
+$phoneNumber = isset($_POST['phoneNumber']) ? htmlspecialchars($_POST['phoneNumber'], ENT_QUOTES, 'UTF-8') : '';
+$postCode    = isset($_POST['postCode']) ? htmlspecialchars($_POST['postCode'], ENT_QUOTES, 'UTF-8') : '';
+$prefecture  = isset($_POST['prefecture']) ? htmlspecialchars($_POST['prefecture'], ENT_QUOTES, 'UTF-8') : '';
+$city        = isset($_POST['city']) ? htmlspecialchars($_POST['city'], ENT_QUOTES, 'UTF-8') : '';
+$houseNumber = isset($_POST['houseNumber']) ? htmlspecialchars($_POST['houseNumber'], ENT_QUOTES, 'UTF-8') : '';
+$body        = isset($_POST['body']) ? nl2br(htmlspecialchars($_POST['body'], ENT_QUOTES, 'UTF-8')) : '';
+$privacy     = isset($_POST['privacy']) ? '同意する' : '同意しない';
+
+// メールの件名
+$subject = "お問い合わせがありました - $name";
+
+// メール本文の作成
+$message = "
+【お問い合わせ内容】
+
+■ お名前：
+$name
+
+■ 会社・組織名：
+$company
+
+■ メールアドレス：
+$email
+
+■ 電話番号：
+$phoneNumber
+
+■ 住所：
+〒$postCode
+$prefecture $city $houseNumber
+
+■ お問い合わせ内容：
+$body
+
+■ 個人情報の取扱い：
+$privacy
+";
+
+// メールのヘッダー情報
+$headers = "From: no-reply@example.com\r\n"; // 送信元アドレスを適宜変更
+$headers .= "Reply-To: $email\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+// メール送信処理
+if (mail($to, $subject, $message, $headers)) {
+    // 送信成功時の処理
+    header("Location: index.php"); // 送信後にサンクスページへリダイレクト
+    exit();
+} else {
+    echo "メールの送信に失敗しました。";
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
