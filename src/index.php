@@ -561,7 +561,7 @@
               <h2 class="c-heading">資料請求・無料相談フォーム</h2>
               <span class="c-heading-text">Request for information/free consultation form</span>
             </div>
-            <form action="form-complete.php" method="post" class="p-contact-form__form">
+            <form action="mailform.php" method="post" class="p-contact-form__form">
               <!-- === お問い合わせ項目 === -->
               <div class="p-contact-form__form__item">
                 <div class="p-contact-form__form__item__label">
@@ -570,13 +570,13 @@
                 </div>
                 <div class="p-contact-form__form__item__input p-contact-form__form__item__input__flex">
                   <div class="p-contact-form__form__item__input__radio">
-                    <label><input type="radio" name="kinds">資料請求 </label>                  
+                    <label><input type="radio" name="kinds" required>資料請求 </label>                  
                   </div>
                   <div class="p-contact-form__form__item__input__radio">
-                    <label><input type="radio" name="kinds">無料相談</label>
+                    <label><input type="radio" name="kinds" required>無料相談</label>
                   </div>
                   <div class="p-contact-form__form__item__input__radio">
-                    <label><input type="radio" name="kinds">その他</label>
+                    <label><input type="radio" name="kinds" required>その他</label>
                   </div>
                 </div>
               </div>
@@ -587,7 +587,7 @@
                   <label>氏名</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="name">
+                  <input type="text" name="name" required>
                 </div>
               </div>
               <!-- === 会社・組織名 === -->
@@ -597,7 +597,7 @@
                   <label>会社・組織名</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="company">
+                  <input type="text" name="company" required>
                 </div>
               </div>
               <!-- === メールアドレス === -->
@@ -607,7 +607,7 @@
                   <label>メールアドレス</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="email" placeholder="例）info@test.jp">
+                  <input type="text" name="email" placeholder="例）info@test.jp" required>
                 </div>
               </div>
               <!-- === 電話番号 === -->
@@ -617,7 +617,7 @@
                   <label>電話番号</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <input type="text" name="phoneNumber" placeholder="例）000-0000-0000">
+                  <input type="text" name="phoneNumber" placeholder="例）000-0000-0000" required>
                 </div>
               </div>
               <!-- === 住所 === -->
@@ -630,7 +630,7 @@
                   <div class="p-contact-form__form__item__address__input__flex">
                     <div class="p-contact-form__form__item__address__input__postCode p-contact-form__form__item__address__input__inner">
                       <span>郵便番号</span>
-                      <input type="text" name="postCode" placeholder="例）0000000">
+                      <input type="text" name="postCode" placeholder="例）0000000" required>
                     </div>
                     <div class="p-contact-form__form__item__address__input__prefecture p-contact-form__form__item__address__input__inner">
                       <span>都道府県</span>
@@ -656,7 +656,7 @@
                         }
                       </script>
                       <div class="option-arrow">
-                        <select name="prefecture" onchange="changeColor(this)">
+                        <select name="prefecture" onchange="changeColor(this)" required>
                           <option value="">選択してください</option>
                           <?php foreach ($prefectures as $prefecture): ?>
                             <option value="<?php echo htmlspecialchars($prefecture, ENT_QUOTES, 'UTF-8'); ?>">
@@ -669,11 +669,11 @@
                   </div>
                   <div class="p-contact-form__form__item__address__input__city p-contact-form__form__item__address__input__inner">
                     <span>市区町村</span>
-                    <input type="text" name="city">
+                    <input type="text" name="city" required>
                   </div>
                   <div class="p-contact-form__form__item__address__input__houseNumber p-contact-form__form__item__address__input__inner">
                     <span>番地</span>
-                    <input type="text" name="houseNumber">
+                    <input type="text" name="houseNumber" required>
                   </div>
                 </div>
               </div>
@@ -684,7 +684,7 @@
                   <label>お問い合わせ内容</label>
                 </div>
                 <div class="p-contact-form__form__item__input">
-                  <textarea name="body"></textarea>
+                  <textarea name="body" required></textarea>
                 </div>
               </div>
               <!-- === 個人情報の取扱いについて === -->
@@ -695,7 +695,7 @@
                 </div>
                 <div class="p-contact-form__form__item__input">
                   <div class="p-contact-form__form__item__input__flex p-contact-form__form__item__input__privacy">
-                    <label><input type="checkbox" name="privacy">同意する</label>
+                    <label><input type="checkbox" name="privacy" required>同意する</label>
                   </div>
                   <div class="p-contact-form__form__item__input__privacy__text">
                     <p>個人情報のお取り扱い方針については<a href="">こちら</a>をご確認ください。</p>

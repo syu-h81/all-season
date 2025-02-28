@@ -1147,4 +1147,36 @@
       }
     }
   }
+  &-form-thanks {
+    &__container {
+      background-color: g.$primary-bg;
+      padding: 8rem 0;
+    }
+    &__heading {
+      text-align: center;
+    }
+    &__body {
+      max-width: 1000px;
+      background-color: #fff;
+      padding: 4rem;
+      margin: 0 auto;
+      margin-top: 40px;
+      @include g.mq(md) {
+        width: 90%;
+        padding: 1rem;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+      &__text {
+        line-height: 33px;
+        @include g.mq(md) {
+          font-size: 2.56vw;
+        }
+      }
+      &__redirect {
+        color: g.$primary-heading;
+        margin-top: 30px;
+      }
+    }
+  }
 }

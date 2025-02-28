@@ -2019,4 +2019,38 @@ img {
 .p-contact-form__form__item__submit:hover {
   opacity: 0.7;
   transition: opacity 0.2s linear;
+}
+.p-form-thanks__container {
+  background-color: #EEF2F6;
+  padding: 8rem 0;
+}
+.p-form-thanks__heading {
+  text-align: center;
+}
+.p-form-thanks__body {
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 4rem;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-form-thanks__body {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+.p-form-thanks__body__text {
+  line-height: 33px;
+}
+@media screen and (max-width: 768px) {
+  .p-form-thanks__body__text {
+    font-size: 2.56vw;
+  }
+}
+.p-form-thanks__body__redirect {
+  color: #223E69;
+  margin-top: 30px;
 }/*# sourceMappingURL=styles.css.map */

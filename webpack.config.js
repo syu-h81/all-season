@@ -81,6 +81,11 @@ module.exports = {
         { from: 'src/form-complete.php', to: 'form-complete.php' },
       ]
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/mailform.php', to: 'mailform.php' },
+      ]
+    }),
   ],
   // node_modules を監視（watch）対象から除外
   watchOptions: {
